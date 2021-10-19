@@ -11,6 +11,7 @@ public class main {
 
         for (int i = 0; i < num_of_students; i++){
             Student s = new Student(file);
+            s.write(new File("Student No." + String.valueOf(i+1) +  ".txt"));
         }
 
     }
