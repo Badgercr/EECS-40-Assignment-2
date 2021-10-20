@@ -8,10 +8,9 @@ public class main {
         Scanner sc = new Scanner(file);
         int num_of_students = sc.nextInt();
 
-
+        Student s = new Student(file);
         for (int i = 0; i < num_of_students; i++){
-            Student s = new Student(file);
-            s.write(new File("Student No." + String.valueOf(i+1) +  ".txt"));
+            s.write(new File("Student No." + String.valueOf(i+1) +  ".txt"), i);
         }
 
     }
