@@ -36,7 +36,8 @@ public class AcademicRecords {
         for (int i = 0; i < number_of_courses; i++){
             sum += grade_point[i];
         }
-        calculated_GPA = sum / number_of_courses;
+        double d = sum / number_of_courses;
+        calculated_GPA = Math.round(d*100.0)/100.0;
     }
 
     /**

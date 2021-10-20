@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class main {
+public class studentTest {
     public static void main(String[] args) throws IOException {
         // File object to scan from
         File file = new File("Input.txt");
