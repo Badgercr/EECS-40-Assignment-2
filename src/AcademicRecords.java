@@ -1,8 +1,8 @@
 public class AcademicRecords {
     /*------------------variables-------------------*/
     private String school;
-    private String course_title[], research_date[], research_experiences[];
-    private double grade_point[];
+    private String[] course_title, research_date, research_experiences;
+    private double[] grade_point;
     private int number_of_courses, number_of_research_experiences;
     private double calculated_GPA;
     private int index = 0;
@@ -10,6 +10,11 @@ public class AcademicRecords {
 
     /*------------------constructors-------------------*/
 
+    /**
+     * Sets the school name and number of courses. Also allocates memory for the grade points and courses
+     * @param school School name
+     * @param number_of_courses how many courses are taken
+     */
     public AcademicRecords(String school, int number_of_courses) {
         this.school = school;
         this.number_of_courses = number_of_courses;
@@ -36,8 +41,8 @@ public class AcademicRecords {
 
     /**
      * Adds a single course with its given grade.
-     * @param course
-     * @param grade
+     * @param course course title
+     * @param grade grade given
      */
     public void add_course_and_grade(String course, double grade){
         if (index < number_of_courses){
@@ -47,6 +52,12 @@ public class AcademicRecords {
         }
 
     }
+
+    /**
+     * Adds a research experience with given title and date
+     * @param research_experiences research experience title or position
+     * @param research_date date of participation
+     */
     public void add_research_experience(String research_experiences, String research_date){
         this.research_experiences[index_2] = research_experiences;
         this.research_date[index_2] = research_date;

@@ -1,7 +1,7 @@
 public class Projects {
     /*------------------variables-------------------*/
     private int number_of_projects, index = 0;
-    private String project_titles[], project_dates[];
+    private String[] project_titles, project_dates;
     /*------------------constructors-------------------*/
 
     /**
@@ -14,6 +14,12 @@ public class Projects {
         project_dates = new String[this.number_of_projects];
     }
     /*------------------functions-------------------*/
+
+    /**
+     * Adds a project to arrays with its respective titles and dates
+     * @param project_title title or the project
+     * @param project_date dates project was worked on
+     */
     public void add_project(String project_title, String project_date){
         project_titles[index] = project_title;
         project_dates[index] = project_date;

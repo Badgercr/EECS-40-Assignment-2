@@ -6,9 +6,9 @@ public class PersonalInfo{
     /*------------------constructors-------------------*/
 
     /**
-     *
-     * @param name
-     * @param phone_number
+     * Sets the person/student name and phone number for them
+     * @param name name of student
+     * @param phone_number phone number of student
      */
     public PersonalInfo(String name, String phone_number) {
         this.name = name;

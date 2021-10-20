@@ -3,7 +3,7 @@
 public class Certificates{
 /*------------------variables-------------------*/
     private int number_of_certificates, index = 0;
-    private String certificate_titles[], certificate_dates[];
+    private String[] certificate_titles, certificate_dates;
 
 
 
@@ -21,6 +21,12 @@ public class Certificates{
     }
 
 /*------------------functions-------------------*/
+
+    /**
+     * Adds a certificate date and title to an array
+     * @param certificate_title title
+     * @param date date certificate was earned
+     */
     public void add_certificate(String certificate_title, String date){
         certificate_titles[index] = certificate_title;
         certificate_dates[index] = date;
@@ -28,6 +34,10 @@ public class Certificates{
     }
 /*------------------setters-------------------*/
 
+    /**
+     * sets and allocates memory for the certificates
+     * @param number_of_certificates how many certificates were earned
+     */
     public void setNumber_of_certificates(int number_of_certificates) {
         this.number_of_certificates = number_of_certificates;
         certificate_titles = new String[this.number_of_certificates];
